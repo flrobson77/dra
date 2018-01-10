@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+body{
+	background-color: #3030ff;
+	color: rgba(0,0,0,1);	
+}
+
+ul{
+	font-family: arial, verdana;
+	font-size: 13pt;
+	text-align: left;
+}
+
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #3030ff;
+}
+
+div#interface {
+	width: 1000px;
+	background-color: #ffffff;
+	margin: 0px auto 10px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+	padding: 10px;
+}
+p{
+		text-align: justify;
+		font-family: arial, verdana;
+		font-size: 13pt;
+		text-indent: 50px;
+}
+h2 {
+	text-align: left;
+	font-family: arial, verdana;
+	font-size: 25px;
+	font-weight: bold;	
+}
+
+h4 {
+	text-align: left;
+	font-family: arial, verdana;
+	font-size: 10pt;
+	font-weight: bold;	
+}
+
+header#cabeçalho img#logo {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 220px;
+}
+
+header#cabecalho h3 {
+	font-family: Arial, Verdana;
+	font-size: 10pt;
+	color: #000000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+/*Formatação das Imagens*/
+figure.foto-legenda {
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;	
+}
+
+figure.foto-legenda figcaption {
+	opacity:0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;	
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/*Formatação do Menu*/
+nav#menu {
+	display: block;
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;	
+	position: absolute;
+	top: 0px;
+	left: 700px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 5px;
+	transition: background-color 1s;
+	box-shadow: 1px 1px 2px black;	
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+	box-shadow: 1px 1px 2px white;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;	
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+}
+
+section#principal {
+	display: block;
+	float: center;
+}
+
+
+footer#rodape {
+	clear: both;
+	float: center;
+	border-top: 1px solid #000000;
+}
+
+footer#rodape p {
+	text-align: center;
+	font-family: arial, verdana;
+	font-size: 13pt;		
+}
+

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+h4{
+	font-family: arial;
+	font-size: 13pt;
+	font-weight: normal;
+}
+
+table#tblocal caption{
+	color #000000;
+	font-size: 15pt;	
+	font-weight: bolder;	
+}
+
+table#tblocal {
+	color: #000000;
+	background-color: #ffffff;
+	font-family: arial;
+	font-size: 15pt;
+	border: 1px solid #666666;	
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+table#tblocal td{
+	border: 1px solid #000000;	
+	padding: 10px;
+}
+
+table#tblocal td.ce {
+	color: #ffffff;
+	background-color: #2020ff;
+	text-align: right;
+	vertical-align: top;
+	text-weight: bolder;	
+}
+
+table#tblocal td.cd {
+	color: #000000;
+	text-align: left;
+}
+form {
+	width: 700px;
+	margin: auto;
+}
+
+input, textarea {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255,255,255,.3);
+}
+
+input:hover, textarea:hover {
+	background-color: #dddddd;
+}
+
+legend {
+	color: #3030ff;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20pt;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
+}
+
+fieldset#cont {
+	width: 400px;		
+}
+
+fieldset#cliente {
+	background: url("../imagens/iconeuser.png") no-repeat 95% 95%;
+}
+
+fieldset#historia {
+	background: url("../imagens/iconecaso.png") no-repeat 95% 95%;
+}
