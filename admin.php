@@ -52,23 +52,24 @@
 <fieldset>	
 <H1> ACESSO RESTRITO!!! </H1>
 <H2>Esse acesso é monitorado.</h2>
-<p>
 <?php
+echo "Olá " . $_COOKIE['usuario'] . "<br/>";
 echo " Seu IP é: " . $_SERVER["SERVER_ADDR"] . "<br/>";
 echo " Seu browser: " . $_SERVER["HTTP_USER_AGENT"] . "<br/>";
 ?>
-</p>
 </fieldset>
 
-<H1> Pesquisa sobre os Colaboradores da DRA Advogados </h1><br/>
+<H1> Pesquisa sobre os Colaboradores da DRA Advogados </H1><br/>
+
 <form action="" method="GET">
 	Informe nome do colaborador: <input type="text" name="nome">
 	<input type="submit" value="Enviar">
 </form>
 
 
+
 <?php
-include "/var/www/html/dra/conecta.php";
+include "/var/www/html/sysadmin/dra/conecta.php";
 
 if ( isset($_GET["nome"]) ) {
 	$user = $_GET["nome"];
@@ -78,11 +79,9 @@ if ( isset($_GET["nome"]) ) {
 		$sbn = $linha["sn_membro"];
 		$fun = $linha["fc_membro"];
 		$are = $linha["ar_membro"];
-		echo "<p>";
 		echo "{$user} {$sbn} trabalha na DRA Advocacia <br/>";
 		echo "Como .......: {$fun} <br/>";
 		echo "No setor ...: {$are} <br/>";
-		echo "</p>";
 	}
 	mysqli_close($conn);
 }
