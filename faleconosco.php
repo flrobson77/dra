@@ -52,45 +52,24 @@
 	
 	<p> Envie seu caso, para isso é só preencher o formulário a seguir, agendar sua visita. você receberá em seu e-mail e em seu Whatsapp&reg uma mensagem de confirmação.</p>
 	
-	<form method="post" id="fcontato" action="envio.html">
-	<fieldset id="cliente"><legend>Identificação do Cliente</legend>
+	<form method="post" id="fcontato" action="faq.php">
+	<fieldset id="cliente"><legend>Dados de contato:</legend>
 		<p><label for="cnome"> Nome:</label><br>
 		<input type="text" name="txtnome" id="cnome" size="60" maxlength="50" placeholder="Nome completo"/></p>
 		<p><label for="cmail">E-mail:</label><br>
 		<input type="text" name="txtmail" id="cmail" size="60" maxlength="50" placeholder="E-mail"/></p>
 		<fieldset id="cont"><legend> Contatos: </legend>
-			<p><label for="ctel">Residencial:</label>
-			<input type="text" name="txttel" id="ctel" size="20" maxlength="12" placeholder="(00)XXXXXXXX"/></p>
 			<p><label for="ccel">Celular:</label></h4></td>
 			<input type="text" name="txtcel" id="ccel" size="20" maxlength="13" placeholder="(00)XXXXXXXXX"/></p>
 		</fieldset>
 	</fieldset>
 	<fieldset id="historia"><legend>Caso</legend>
-		<p><label for="cquestao"> Questão ou Problema?</label><br>
+		<p><label for="cquestao"> Envie sua questão ou Problema?</label><br>
 		<input type="text" name="txtquestao" id="cquestao" size="60" maxlength="60" placeholder="Exemplo: Comprei um móvel e a empresa não entregou"/></p>
 		<p><label for="cresumo">Resumo:</label><br>
 		<textarea name="txtresumo" id="cresumo" cols="60" rows="5" placeholder="Escreva aqui um resumo sobre seu caso">
 		</textarea>
 		</p>
-	</fieldset>
-	<fieldset id="agenda"><legend> Agende sua visita </legend>
-		<p><label for="cdate"> Escolha o dia da visita:</label>
-		<input type="date" name="txtdate" id="cdate"/></p>
-		<p><label for="selhoras"> Selecione horário:</label>
-		<select id="choras" name="selhoras" placeholder="Escolha horário">
-			<option> 09h00 </option>
-			<option> 09h30 </option>
-			<option> 10h00 </option>
-			<option> 10h30 </option>
-			<option> 11h00 </option>
-			<option> 11h30 </option>
-			<option> 14h00 </option>
-			<option> 14h30 </option>
-			<option> 15h00 </option>
-			<option> 15h30 </option>
-			<option> 16h00 </option>
-			<option> 16h30 </option>
-		</select>
 	</fieldset>
 	<p>
 	<input type="submit" name="cbenviar" value="Enviar">

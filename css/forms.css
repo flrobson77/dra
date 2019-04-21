@@ -79,3 +79,7 @@ fieldset#cliente {
 fieldset#historia {
 	background: url("../imagens/iconecaso.png") no-repeat 95% 95%;
 }
+
+fieldset#processo { 
+	background: url("../imagens/iconecaso.png") no-repeat 95% 95%;
+}

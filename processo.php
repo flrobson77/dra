@@ -25,7 +25,7 @@
 		</figcaption>
 	</figure>
 
-	<form method="post" id="fcontato" action="valida_processo.php">
+	<form method="post" id="fcontato" action="valida_processo.php" enctype="multipart/form-data">
 	<fieldset id="cliente"><legend>Dados do Cliente</legend>
         <p><label for="ccli"> Cliente:</label>
             <select id="cadv" name="advo" placeholder="Informe cliente">
@@ -66,6 +66,10 @@
 			<option> 16:30 </option>
 		</select>
 	</fieldset>
+	<fieldset id="processo"><legend>Submissão</legend>
+		<p><label for="carqv"> Arquivo:</label><br/>
+		<input type="file" name="arqv" id="carqv" placeholder="Encaminhe seu documentos"/></p>
+</fieldset>
 	<p>
 	<input type="submit" name="cbenviar" value="Enviar">
 	<input type="reset" name="cblimpar" value="Limpar">

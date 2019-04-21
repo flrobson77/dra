@@ -7,22 +7,27 @@
         <link rel="stylesheet" type="text/css" href="css/forms.css"/>
 </head>
 <body>
-        <div id="interface">
-                <header id="cabecalho">
-                <figure id="logo">
-                <img id="logo" src="imagens/direitologo.jpg"/>
-                <figcaption>
-                    Nós nascemos para lutar por você.
-                </figcaption>
-                </figure>
-                </header>
+    <div id="interface">
+    <header id="cabecalho">
+        <figure id="logo">
+        <img id="logo" src="imagens/direitologo.jpg"/>
+            <figcaption>
+            Nós nascemos para lutar por você.
+            </figcaption>
+        </figure>
+        <nav id="menu">
+	        <ul type="disc">
+	            <li><a href="index.html">Home</a></li>
+	        </ul>
+	    </nav>
+    </header>
     <section>
-    <figure class="foto-legenda">
-        <img src="imagens/direito004.jpg"/>
-        <figcaption>
-           Fonte:Google_fotos
-        </figcaption>
-    </figure>
+        <figure class="foto-legenda">
+            <img src="imagens/direito004.jpg"/>
+            <figcaption>
+                Fonte:Google_fotos
+            </figcaption>
+        </figure>
 
     <form action="valida_cliente.php" method="POST">
     <fieldset id="cliente">
@@ -39,22 +44,20 @@
         <input type="text" name="rger" size="20" maxlength="12" placeholder="Sem pontos e hífen"></p>
         <p><label for="ccpf">CPF:</label>
         <input type="text" name="dcpf" size="20" maxlength="11" placeholder="Sem pontos e hífen"></p>
-        
         <input type="submit" name="cbenviar" value="Enviar">
 	    <input type="reset" name="cblimpar" value="Limpar">
     </fieldset>
     </form>
-</section>
-<a href="index.html"> Voltar </a>
-<footer id="rodape">
-<fieldset>
-    <p> Este serviço é fictício, elaborado para uso exclusivo na disciplina de segurança da informação no IFSP Câmpus Guarulhos e será usado somente para fins didáticos</p>
-    <p>	Copyright&copy 2017 by Robson Lopes</p>	
-    <p><a href="http://www.facebook.com" target="_blank"><img src="imagens/fbklogo.jpg"/></a>
-    <a href="http://www.twitter.com" target="_blank"><img src="imagens/twrlogo.jpg"/></a>
-    </p>
-</fieldset>
-</div>
+    </section>
+    <footer id="rodape">
+    <fieldset>
+        <p> Este serviço é fictício, elaborado para uso exclusivo na disciplina de segurança da informação no IFSP Câmpus Guarulhos e será usado somente para fins didáticos</p>
+        <p>	Copyright&copy 2017 by Robson Lopes</p>	
+        <p><a href="http://www.facebook.com" target="_blank"><img src="imagens/fbklogo.jpg"/></a>
+        <a href="http://www.twitter.com" target="_blank"><img src="imagens/twrlogo.jpg"/></a>
+        </p>
+    </fieldset>
+    </div>
 </body>
 </html>
 
