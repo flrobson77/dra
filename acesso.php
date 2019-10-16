@@ -11,14 +11,20 @@
 	}
 	h1 {
 		font-family: arial;
-		font-size: 30;
+		font-size: 30px;
 		color: blue;
 		text-align: center;
 		text-shadow: 2px 2px 2px black;
 	}
 	h2 {
 		font-family: arial;
-		font-size: 20;
+		font-size: 20px;
+		text-align: center;
+		color: black;
+	}
+	h3 {
+		font-family: arial;
+		font-size: 10px;
 		text-align: center;
 		color: black;
 	}
@@ -48,6 +54,12 @@
 		width: 350px;
 		margin: auto;
 	}
+	div#erro {
+	width: 600px;
+	background-color: #FF5555;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+}
 	</style>
 </head>
 <body>
@@ -64,6 +76,12 @@
 	<h1>Acesso administrativo</h1><br/>
 	<h2>ACESSO RESTRITO</h2><br/>
 	
+	<?php if (isset($_GET['erro'])){ ?>
+	<div id="erro">
+		<h2> Usuário e/ou senha inválidos </h2> <br/>
+	</div>
+<?php } ?>
+	
 <form action="../dra/login.php" method="POST">
 <fieldset id="acesso">
 	<legend> Acesso administrativo</legend>
@@ -76,6 +94,7 @@
 	<button type="submit"> Entrar </button>
 </fieldset>
 </form>
+
 <a href="index.html"> Voltar </a>
 <footer id="rodape">
 <fieldset>

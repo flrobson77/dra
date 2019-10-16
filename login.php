@@ -16,17 +16,23 @@ while ( $linha = mysqli_fetch_assoc($dados) ) {
 
 if (mysqli_num_rows($dados)==1 && $tp =='SAD')
 {
-	setcookie("usuario", $nm, time()+60+60*24);
+	session_start();
+	$_SESSION['adm'] = true;
+	$_SESSION['logado'] = $nm;
+	setcookie("usuario", $nm, time()+60+60*2);
 	header("location:admin.php");
 }
 elseif (mysqli_num_rows($dados)==1 && $tp =='COM')
 {
-	setcookie("usuario", $nm, time()+60+60*24);
+	session_start();
+	$_SESSION['comum'] = true;
+	$_SESSION['logado'] = $nm;
+	setcookie("usuario", $nm, time()+60+60*2);
 	header("location:admscr.php");
 }
 else
 {
-	echo "Usuario $users ou senha não válidos";
+	header("location:acesso.php?erro");
 }
 ?>
 
