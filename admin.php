@@ -77,7 +77,7 @@ echo " Seu browser: " . $_SERVER["HTTP_USER_AGENT"] . "<br/>";
 
 
 <?php
-include "/var/www/html/sysadmin/dra/conecta.php";
+include "/var/www/html/dra/conecta.php";
 
 if ( isset($_GET["nome"]) ) {
 	$user = $_GET["nome"];
@@ -105,6 +105,8 @@ if ( isset($_GET["nome"]) ) {
 <a href="index.html"> Voltar </a>
 <footer>
 <fieldset>
+	<p> Chave 1 - Decodifique e coloque em local indicado no AVA: <br/>
+		VmljdG9yeSEgY29udGludWUgZSBidXNxdWUgYXMgb3V0cmFzIGZsYWdzCg== </p>
 	<p> Essa aplicação é ficticia, elaborada para uso exclusivo da disciplina de Segurança da Informação do IFSP Câmpus Guarulhos e será usado somente para fins didáticos.</p>
 	<p>Adaptado por: Robson Lopes</p>
 </fieldset>

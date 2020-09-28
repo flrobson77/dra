@@ -18,7 +18,7 @@
 <section>
 
 <?php
-include "/var/www/html/sysadmin/dra/conecta.php";
+include "/var/www/html/dra/conecta.php";
 $cpf=$_COOKIE['cliente'];
 $sql = "SELECT * FROM dra_cliente ORDER BY nm_cliente;";// WHERE cp_cliente='$cpf';";
 echo $sql;
@@ -60,10 +60,13 @@ else
 ?>
 </section>
 <a href="cliente.php"> Cliente </a>
-<a href="index.html"> Voltar </a>
+<a href="admscr.php"> Voltar </a>
 <footer id="rodape">
 <fieldset>
-    <p> Este serviço é fictício, elaborado para uso exclusivo na disciplina de segurança da informação no IFSP Câmpus Guarulhos e será usado somente para fins didáticos</p>
+    <p> Chave 2 - Decifre e entregue: <br/>
+	VmljdG9yeSEgLSBDaGF2ZSAyIC0gUHJvZ3JhbWFkb3IgZGVzY3VpZGFkbwo= </p>
+    <p> Este serviço é fictício, elaborado para uso exclusivo na disciplina de segurança da informação no IFSP Câmpus
+	Guarulhos e será usado somente para fins didáticos</p>
     <p>	Copyright&copy 2017 by Robson Lopes</p>	
     <p><a href="http://www.facebook.com" target="_blank"><img src="imagens/fbklogo.jpg"/></a>
     <a href="http://www.twitter.com" target="_blank"><img src="imagens/twrlogo.jpg"/></a>

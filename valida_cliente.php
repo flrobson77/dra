@@ -28,7 +28,7 @@
             </figcaption>
     </figure>
     <?php
-        include "/var/www/html/sysadmin/dra/conecta.php";
+        include "/var/www/html/dra/conecta.php";
     
         $nom = $_POST['nome'];
         $sno = $_POST['snom'];

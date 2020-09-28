@@ -17,7 +17,7 @@
         </figure>
         <nav id="menu">
 	        <ul type="disc">
-	            <li><a href="index.html">Home</a></li>
+	            <li><a href="admscr.php">Voltar</a></li>
 	        </ul>
 	    </nav>
     </header>

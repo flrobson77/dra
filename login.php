@@ -1,5 +1,5 @@
 <?php
-include "/var/www/html/sysadmin/dra/conecta.php";
+include "/var/www/html/dra/conecta.php";
 
 $users = $_POST['user'];
 $password = $_POST['pass'];

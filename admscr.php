@@ -20,11 +20,16 @@ if(isset($_SESSION['comum'])){
                 Nós nascemos para lutar por você.
             </figcaption>
             </figure>
-
-            <?php if(isset($_SESSION['comum'])) { ?>
-		<a href="logout.php">
-			<?php echo $_SESSION['logado']; ?> (sair) </a>
-	<?php } ?>
+	    <nav id="menu">
+	    <h1>Menu Principal</h1>
+	    <ul type="disc">
+		<li><a href="cliente.php">Novos Clientes</a></li>
+		<li><a href="consulta_cliente.php">Busca por Clientes</a></li>
+		<li>
+            	<?php if(isset($_SESSION['comum'])) { ?>
+		<a href="logout.php"> <?php echo $_SESSION['logado'];?> (sair) </a><?php } ?></li>
+	    </ul>
+	    </nav>
         </header>
 
     <section>
